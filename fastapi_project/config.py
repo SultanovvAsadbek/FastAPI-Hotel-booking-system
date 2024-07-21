@@ -1,8 +1,12 @@
+import os
+from dotenv import load_dotenv
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 
+load_dotenv()
+
 # URL базы данных. Замените на фактический URL вашей базы данных.
-DATABASE_URL = f"postgresql://username:password@localhost/db_name"
+DATABASE_URL = os.getenv("DB_URL")
 
 # Создание engine для взаимодействия с базой данных
 engine = create_engine(DATABASE_URL)
