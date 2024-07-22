@@ -2,7 +2,7 @@ from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 
 # URL базы данных. Замените на фактический URL вашей базы данных.
-DATABASE_URL = "postgresql://booking_room_jdwv_user:kDtdujPTZay3f8X3C2AESkk6SqdX9AsS@dpg-cqeg8i1u0jms739b5oug-a.oregon-postgres.render.com/booking_room_jdwv"
+DATABASE_URL = "postgresql://reserve_room_user:HUPSuuWtCE7mAd6tHmeDmrIMaWXjgIMM@dpg-cqeuk1o8fa8c73ef4j90-a.oregon-postgres.render.com/reserve_room"
 
 # Создание engine для взаимодействия с базой данных
 engine = create_engine(DATABASE_URL)
