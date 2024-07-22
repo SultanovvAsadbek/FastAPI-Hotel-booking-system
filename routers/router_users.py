@@ -2,8 +2,8 @@ from fastapi import APIRouter
 from fastapi import HTTPException, Depends
 from sqlalchemy.orm import Session
 from config import SessionLocal
-from models import Users, Rooms, ReservedRooms
-from schemas import (
+from models.models import Users, Rooms, ReservedRooms
+from schemas.schemas import (
     UserCreate,
     User,
     Room,

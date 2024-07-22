@@ -3,8 +3,8 @@ from fastapi import HTTPException, Depends
 from sqlalchemy.orm import Session
 from datetime import datetime
 from config import SessionLocal
-from models import Rooms, ReservedRooms
-from schemas import (
+from models.models import Rooms, ReservedRooms
+from schemas.schemas import (
     RoomCreate,
     Room,
     ReservedRoom,
